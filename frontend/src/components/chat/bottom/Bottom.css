@@ -1,0 +1,17 @@
+.imagepreview {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 90px;
+}
+
+.imagepreview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.imagepreview button{
+    position: absolute;
+}

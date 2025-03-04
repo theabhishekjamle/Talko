@@ -1,0 +1,16 @@
+.ChatList{
+    
+    flex: 1;
+    height: 100%;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+
+@media screen and (min-width:720px){
+    .ChatList{
+        display: flex !important;
+        width: 100% !important;
+    }
+}

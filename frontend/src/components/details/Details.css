@@ -1,0 +1,109 @@
+.Details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-width: 300px;
+
+
+    .user{
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 20px;
+        border-bottom: 2px solid rgb(0, 0, 0);
+
+        img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        span{
+            font-size: 18px;
+
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            color: rgb(158, 158, 158);
+        }
+    }
+
+    .options{
+        flex: 1;
+        overflow-y: scroll;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px;
+        border-bottom: 1px solid rgb(158,158,158);
+        ::-webkit-scrollbar {
+            width: 0; 
+        }
+    
+        -ms-overflow-style: none; 
+        scrollbar-width: none;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap:5px;
+
+        .image-item{
+            width: 90%;
+            height: 50px;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid rgb(159, 159, 159);
+
+            img{
+                height: 100%;
+                object-fit: contain;
+                margin: 0;
+            }
+            p{
+                font-size: 16px;
+            }
+            .arrowindicators{
+                height: 20px;
+            }
+
+        }
+    }
+
+    .buttons{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        padding: 10px 0px 5px;
+        
+        
+
+        button{
+            width: 100%;
+            border-radius: 10px;
+            height: 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .blockuserbtn{
+            background-color: rgb(251, 71, 71);
+        }
+        .logoutbtn{
+            background-color: rgb(77, 77, 255);
+        }
+
+    }
+}
+
