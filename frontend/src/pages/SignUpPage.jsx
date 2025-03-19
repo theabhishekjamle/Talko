@@ -50,26 +50,33 @@ const handleSubmit = async (e) => {
       <form onSubmit={handleSubmit} className='signup-form'>
         <h2>Signup</h2>
         <div className='form-group'>
-          <input
-            type="text"
-            placeholder="Full Name"
-            value={formData.fullName}
-            onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-          />
+          <label>Username</label>
+          <div className='input-container'>
+            <input
+              type="text"
+              placeholder="Jhon_123"
+              value={formData.fullName}
+              onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+            />
+          </div>
         </div>
         <div className='form-group'>
-          <input
-            type="email"
-            placeholder="E-Mail"
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          />
+          <label>E-mail</label>
+          <div className='input-container'> 
+            <input
+              type="email"
+              placeholder="jhon123@gmail.com"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            />
+          </div>
         </div>
         <div className="form-group">
-          <div className="password-input-container">
+          <label>password</label>
+          <div className="input-container">
             <input
               type={showPassword ? "text" : "password"}
-              placeholder="Enter your password"
+              placeholder="******"
               value={formData.password}
               onChange={(e) =>
                 setFormData({ ...formData, password: e.target.value })
@@ -80,7 +87,7 @@ const handleSubmit = async (e) => {
               className="toggle-password"
               onClick={() => setShowPassword((prev) => !prev)}
             >
-              {showPassword ? "Hide" : "Show"}
+              {showPassword ? "🙈" : "👁️"}
             </button>
           </div>
         </div>

@@ -40,17 +40,19 @@ export default function LogInPage() {
         <h2>Login</h2>
         <div className="form-group">
           <label>Email</label>
-          <input
-            type="email"
-            placeholder="abc123@gmail.com"
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            required
-          />
+          <div className="input-container">
+            <input
+              type="email"
+              placeholder="abc123@gmail.com"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              required
+            />
+          </div>
         </div>
         <div className="form-group">
           <label>Password</label>
-          <div className="password-input-container">
+          <div className="input-container">
             <input
               type={showPassword ? "text" : "password"}
               placeholder="*****"
@@ -65,8 +67,9 @@ export default function LogInPage() {
               className="toggle-password"
               onClick={() => setShowPassword((prev) => !prev)}
             >
-              {showPassword ? "Hide" : "Show"}
+              {showPassword ? "🙈" : "👁️"}
             </button>
+           
           </div>
         </div>
         <div className="btndiv">

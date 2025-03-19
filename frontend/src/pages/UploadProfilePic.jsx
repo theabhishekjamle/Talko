@@ -33,14 +33,14 @@ export default function UploadProfilePic() {
 
   return (
     <div className="upload-container">
-      <a href='/' style={{alignSelf:'flex-start'}}><img src='redleftarrow.png' alt='Back' style={{height:'30px'}}></img></a>
+      <a href='/' style={{alignSelf:'flex-start'}}><img src='images/redleftarrow.png' alt='Back' style={{height:'30px'}}></img></a>
       <div className="profile-container">
         <div className="profilepic">
           <img src={selectedImage || authUser.profilePic} alt="Profile" />
         </div>
         <form onSubmit={handleImageSubmit}>
           <label htmlFor="upload-profile" className="upload-label">
-            <img src="./camera.png" alt="Upload" className="camera-icon" />
+            <img src="images/camera.png" alt="Upload" className="camera-icon" />
           </label>
           <input
             id="upload-profile"
@@ -65,7 +65,7 @@ export default function UploadProfilePic() {
             <p>{new Date(authUser.createdAt).toLocaleDateString('en-GB')}</p>
           </div>
           <div className='icons'>
-            <img src='./logout.png' onClick={logOut} alt='logout'></img>
+            <img src='images/logout.png' onClick={logOut} alt='logout'></img>
           </div>      
         </div>
       </div>

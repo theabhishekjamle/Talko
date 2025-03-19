@@ -38,6 +38,7 @@ export const userAuthStore = create((set,get)=>({
 
 
     signUp: async (formData) =>{
+        toast.dismiss(); 
         try {
             set({isSigningUp:true})
             const response = await fetch('http://localhost:5000/api/auth/signup', {
@@ -68,6 +69,7 @@ export const userAuthStore = create((set,get)=>({
     },
 
     logIn: async (formData) =>{
+        toast.dismiss(); 
         try {
             set({isLoggingIn:true})
             const response = await fetch('http://localhost:5000/api/auth/login', {

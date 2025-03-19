@@ -30,10 +30,8 @@
   text-align: center;
   color: white;
 }
-
 .form-group {
-  margin-bottom: 20px;
-  align-self: flex-start;
+  width: 90%;
 }
 
 .form-group label {
@@ -44,35 +42,37 @@
   color: rgb(255, 255, 255);
 }
 
-.form-group input {
-  width: 330px;
-  padding: 10px;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
+.input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.699);
-  color: rgb(0, 0, 0);
+  border-radius: 20px;
 }
 
-.form-group input:focus {
-  border: 2px solid rgb(37, 39, 38);
+.input-container input {
+  flex: 1; 
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: black;
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+.input-container input:focus {
+  outline: 2px solid rgb(37, 39, 38); 
+  border: none;
   outline: none;
 }
 
-.password-input-container {
-  display: flex;
-  align-items: center;
-}
 
-.password-input-container input {
-  min-width: 330px;
-  flex: 1;
-}
 
 .toggle-password {
   background: none;
   border: none;
-  font-size: 14px;
+  font-size: 25px;
   margin-left: 8px;
   cursor: pointer;
   color: #ffffff;
