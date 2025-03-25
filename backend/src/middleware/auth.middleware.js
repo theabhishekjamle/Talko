@@ -9,7 +9,7 @@ export const protectRoute = async (req,res,next) =>{
             return res.status(401).json({message:"Unauthorized token not provided"});
         }
 
-        const decoded = jwt.verify(token,process.env.JWT_SECRET)
+        const decoded = jwt.verify(token,"abhishek")
 
         if(!decoded){
             return res.status(401).json({message:"Unauthorized token is Invalid"})
