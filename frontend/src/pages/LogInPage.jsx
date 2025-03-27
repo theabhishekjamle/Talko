@@ -43,7 +43,7 @@ export default function LogInPage() {
           <div className="input-container">
             <input
               type="email"
-              placeholder="abc123@gmail.com"
+              placeholder="Enter Email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
@@ -55,7 +55,7 @@ export default function LogInPage() {
           <div className="input-container">
             <input
               type={showPassword ? "text" : "password"}
-              placeholder="*****"
+              placeholder="Enter Password"
               value={formData.password}
               onChange={(e) =>
                 setFormData({ ...formData, password: e.target.value })
@@ -79,7 +79,7 @@ export default function LogInPage() {
               className="login-button"
               disabled={isLoggingIn}
             >
-              {isLoggingIn ? "Logging in..." : "Login"}
+              {isLoggingIn ? "Please Wait Logging..." : "Login"}
             </button>
         </div>
       </form>

@@ -81,6 +81,15 @@ const Chat = ({setChatListVisibility}) => {
               <span>{selectedUser.fullName}</span>
             </div>
           </div>
+
+          
+
+          <div className="features">
+
+          <div className="call">
+          <img id='phone'   src="./images/phone-64.png" alt="=" />
+          <img id='videoCall' src="./images/video-call-64.png" alt="=" />
+          </div>
           <div className="icons">
             <button
               onClick={() =>
@@ -90,6 +99,8 @@ const Chat = ({setChatListVisibility}) => {
               <img src="./images/more.png" alt="=" />
             </button>
           </div>
+          </div>
+          
         </div>
 
         <div className="center">

@@ -11,6 +11,15 @@
     object-fit: cover; 
     object-position: center; 
 }
+#btom{
+    background:transparent;
+}
+.icons button{
+   background:transparent;
+   border: 0;
+   color: white;
+}
+
 
 .imagepreview button{
     position: absolute;

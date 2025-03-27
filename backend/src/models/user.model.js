@@ -18,7 +18,7 @@
         },
         profilePic:{
             type:String,
-            default:"./profile.png"
+            default:"https://avatar.iran.liara.run/public/35"
         },
     },
     {

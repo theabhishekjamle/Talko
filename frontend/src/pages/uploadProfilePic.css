@@ -1,109 +1,170 @@
 .upload-container {
-    background:transparent;
-    min-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(25px);
-    border-radius: 25px;
-    padding: 20px;
-    background-color: #2d354e;
-
-  }
-  
-  .profile-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .profilepic img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-  }
-  
-  form {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    
-  }
-  
-  .upload-label {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #007bff;
-    padding: 8px;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    transition: all 0.2s ease;
-  }
-  
-  .upload-label:hover {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .camera-icon {
-    width: 24px;
-    height: 24px;
-  }
-  
-  input[type="submit"] {
-    width: 150px;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-  
-  .details{
-    margin: 0;
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-  }
-  .details p{
-    margin: 0;
-    color: #fff;
-  }
-  
-  .details p:first-child {
-    font-weight: bold;
-
-  }
-
-  .icons{
-    display: flex;
-
-    img{
-        width: 30px;
-        cursor: pointer;
-    }
+  background: rgba(0, 0, 0, 0.121);
+  width: 420px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
 }
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.profilepic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; 
+}
+
+.profilepic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff00;
+  transition: 1s;
+}
+
+.profilepic img:hover{
+  transition: 0.5s;
   
+  border:4px solid #ffffff;
+}
+
+.upload-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  gap: 20px;
+}
+
+.upload-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.upload-label {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  margin: auto;
+  transition: all 0.2s ease;
+}
+
+.upload-label:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.camera-icon {
+  width: 20px;
+  filter: invert(1) brightness(0.9);
+  
+}
+#updatebtn{
+  background: rgb(255, 255, 255);
+  padding: 7px 30px;
+  margin:15px  auto;
+  border: solid white;
+  border-radius: 30px;
+  transition: 0.2s;
+}
+#updatebtn:hover{
+  border: solid rgb(255, 255, 255);
+  background: transparent;
+  transition: 0.2s;
+  color: white;
+}
+.upload-btn {
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  background: linear-gradient(135deg, #667eea 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.upload-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.details-container {
+  text-align: center;
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  margin: 20px;
+
+}
+
+.details {
+  display: inline-flex;
+  gap: 8px;
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.details p {
+  margin: 0;
+}
+
+.details p:first-child {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.details p:last-child {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+
+
+#logoutbtn{
+  margin:70px 00px 00px -230px;
+  background: white;
+  color: black;
+  padding: 7px 30px;
+  border: solid white;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+#logoutbtn:hover{
+  transition: 0.4s;
+  border: solid white;
+  color: rgb(255, 255, 255);
+  background: transparent;
+  
+}
+/* Status indicator */
+.upload-status {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.status-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #667eea, #8b5cf6);
+  transition: width 0.4s ease;
+}

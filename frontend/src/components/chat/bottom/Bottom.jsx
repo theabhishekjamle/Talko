@@ -60,32 +60,31 @@ const handleSendMessage = async()=>{
 }
 
   return (
+    <div className="messageBox">
     <div className="bottom">
         {imagePreview&&(
-            <div className='imagepreview'>
+            <div id='btom' className='imagepreview'>
                 <img src={imagePreview} alt='preview'></img>
                 <button onClick={removeImage}>X</button>
             </div>
 
         )}
-        <div className="emoji">
-          <img src='emoji.png' onClick={()=>setemojiopen((emojiopen)=>!emojiopen)} alt='Emj'/>
+        <div id='btom' className="emoji">
+          <img src='./images/emoji.png' onClick={()=>setemojiopen((emojiopen)=>!emojiopen)} alt='Emj'/>
           <div className="picker">
           <EmojiPicker open={emojiopen} onEmojiClick={handleEmojiClick}/> 
           </div>
         </div> 
         
-        <textarea className='messageinput' placeholder='Message' value={text} onChange={e=>setText(e.target.value)}/>
-
-          
+        <textarea id='btom' className='messageinput' placeholder='Write a Message' value={text} onChange={e=>setText(e.target.value)}/>
           {!isMessageSending&&(
-           <div className='icons'>
-             <input type='file' accept='image/*' ref={fileInputRef} onChange={handleImageChange} style={{display:'none'}}></input>
-             <button type='button' onClick={()=>fileInputRef.current?.click() } disabled={isMessageSending}  style={{background:'transparent'}}><img src='./images/img.png' alt='img'/></button>
-             <button onClick={handleSendMessage} disabled={isMessageSending || (!text.trim() && !imagePreview)} style={{background:'transparent'}}><img src='./images/send.png' alt='send'/></button>
+           <div id='btom' className='icons'>
+             <input type='file' accept='image/*'  ref={fileInputRef} onChange={handleImageChange} style={{display:'none'}}></input>
+             <button type='button' onClick={()=>fileInputRef.current?.click() } disabled={isMessageSending}  ><img src='./images/folder.png' alt='img'/></button>
+             <button onClick={handleSendMessage} disabled={isMessageSending || (!text.trim() && !imagePreview)} ><img src='./images/send.png' alt='send'/></button>
            </div>
           )}
-
+        </div>
         </div>
   )
 }

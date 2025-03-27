@@ -4,8 +4,6 @@
     align-items: center;
     height: 100%;
     min-width: 300px;
-
-
     .user{
         width: 86%;
         display: flex;
@@ -87,8 +85,6 @@
         gap:20px;
         padding: 10px 0px 5px;
         
-        
-
         button{
             width: 100%;
             border-radius: 10px;
@@ -98,7 +94,7 @@
             cursor: pointer;
         }
         .blockuserbtn{
-            background-color: rgb(251, 71, 71);
+            background-color: rgb(255, 255, 255);
         }
         .logoutbtn{
             background-color: rgb(77, 77, 255);

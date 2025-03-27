@@ -49,23 +49,24 @@ export default function UploadProfilePic() {
             onChange={handleImageUpload}
             style={{ display: 'none' }}
           />
-          <input type="submit" value="Update Profile" />
+          <input type="submit" id='updatebtn' value="Update Profile" />
         </form>
         <div className="details-container">
           <div className="details">
-            <p>Full Name:</p>
+            <p>Username :</p>
             <p>{authUser.fullName}</p>
           </div>
           <div className="details">
-            <p>Email:</p>
+            <p>Email :</p>
             <p>{authUser.email}</p>
           </div>
           <div className="details">
-            <p>Scince:</p>
+            <p>Since : </p>
             <p>{new Date(authUser.createdAt).toLocaleDateString('en-GB')}</p>
           </div>
           <div className='icons'>
-            <img src='images/logout.png' onClick={logOut} alt='logout'></img>
+            <button id='logoutbtn' onClick={logOut} alt='logout' >Logout</button>
+           
           </div>      
         </div>
       </div>
