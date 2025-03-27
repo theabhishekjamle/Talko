@@ -20,8 +20,8 @@ A real-time chat application built with the **MERN** stack (**MongoDB, Express.j
 ## Installation & Setup
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/mustang006/MERN_CHATAPP.git
-cd MERN_CHATAPP
+git clone https://github.com/theabhishekjamle/Talko.git
+cd Talko
 ```
 
 ### 2️⃣ Install Dependencies
